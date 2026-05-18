@@ -1,0 +1,33 @@
+---
+import MainLayout from "../pages/layouts/MainLayout.astro";
+import Hero from "../pages/components/Hero.astro";
+import Footer from "../pages/components/Footer.astro";
+import Header from "../pages/components/Header.astro";
+import Parallax from "../pages/components/Parallax.astro";
+---
+
+<MainLayout>
+  <Hero />
+
+  <section class="section" id="producte">
+    <h2>La bebida que necesitas</h2>
+    <p>Energía que impulsa tu día al máximo</p>
+
+    <img src="/public/img/Lata verde.png" alt="Producto Thundefuel" class="product-img" />
+    <img src="/public/img/Lata azul.png" alt="Producto Thundefuel" class="product-img" />
+    <img src="/public/img/Lata Roja.png" alt="Producto Thundefuel" class="product-img" />
+    <img src="/public/img/Lata amarilla.png" alt="Producto Thundefuel" class="product-img" />
+
+    <a href="/producte" class="cta">Ver producto</a>
+  </section>
+
+  
+  <Parallax />
+
+  <section class="feature">
+  <h2>Rendimiento al máximo</h2>
+  <p><strong>ThunderFuel está diseñado para llevar tu energía al siguiente nivel durante todo el día.</strong></p>
+</section>
+
+  <Footer />
+</MainLayout>
